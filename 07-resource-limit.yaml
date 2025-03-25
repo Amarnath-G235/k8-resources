@@ -24,9 +24,9 @@ spec:
       value: Amarnath
     resources:
       requests: 
-        memory: 68mi
+        memory: 68Mi
         cpu: 100m
       limits:
-        memory: 68mi
+        memory: 68Mi
         cpu: 100m
 
