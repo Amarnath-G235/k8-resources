@@ -16,7 +16,7 @@ spec:
     ports:
     - containerPort: 80
     envFrom:
-    - configMapKeyRef:
+      configMapKeyRef:
         name: nginx-config
     # - name: course
     #   valueFrom:
