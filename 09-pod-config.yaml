@@ -15,16 +15,18 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
-    env:
-    - name: course
-      valueFrom:
-        configMapKeyRef:
-          name: nginx-config # name of the configmap you are referring to
-          key: course
-    - name: duration
-      valueFrom:
-        configMapKeyRef:
-          name: nginx-config
-          key: duration
+    envFrom:
+    - configMapKeyRef:
+        name: nginx-config
+    # - name: course
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: nginx-config # name of the configmap you are referring to
+    #       key: course
+    # - name: duration
+    #   valueFrom:
+    #     configMapKeyRef:
+    #       name: nginx-config
+    #       key: duration
 
 
