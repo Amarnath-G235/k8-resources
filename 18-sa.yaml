@@ -42,6 +42,7 @@ metadata:
     #namespace: expense
     #if we don't mention namespace, it will go to default namespace
 spec:
+  serviceAccountName: secret-reader
   containers: 
   - name: nginx
     image: nginx:stable-perl
